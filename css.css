@@ -1,8 +1,10 @@
 /* ------------------------------- reset bruno ------------------------------ */
+/*top right bottom left;*/
 
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
 
 p,
+a,
 h1,
 h2,
 h3,
@@ -14,29 +16,65 @@ h6 {
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  margin-bottom: 0px;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+h1 {
+  line-height: 50px;
+  font-size: 2.5rem;
+}
 
+:root {
+  --azul: #0A5FA9;
+  --verde: #0AA983;
+  --amarelo:#A9860A;
+  --vermelho:#A90A0A;
+}
 
 /* --------------------------------- config --------------------------------- */
 
 hr {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tazul {
+  color: var(--azul);
+}
+
+.tverde {
+  color: var(--verde);
+}
+
+.tamarelo {
+  color: var(--amarelo);
+}
+
+.tvermelho {
+  color: var(--vermelho);
 }
 
 
 
 
+/* --------------------------------- elementos --------------------------------- */
+.tcentro{
+  text-align: center;
+}
+.feature{
+  background-color:#fff;
 
-/* --------------------------------- textos --------------------------------- */
+}
+#scasa .feature{
+  border:2px solid var(--azul);
+
+}
 
 ul,
 ol {
@@ -47,31 +85,148 @@ ol li,
 ul li {
   margin-bottom: 10px;
 }
+.bord_10{
+  border-radius:10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  -ms-border-radius:10px;
+  -o-border-radius:10px;
+}
+.info {
+  background-color: #fff;
+  border-radius: 0px 0px 10px 10px;
+  -webkit-border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px;
+  -ms-border-radius: 0px 0px 10px 10px;
+  -o-border-radius: 0px 0px 10px 10px;
+}
 
-
-
-
-/* --------------------------------- Botoes --------------------------------- */
-
-.bt-verde {
-  background-color: #6ea92f;
-  color: #fff !important;
+.bt {
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+.foto {
+  border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -ms-border-radius: 10px 10px 0px 0px;
+  -o-border-radius: 10px 10px 0px 0px;
+  height: 150px;
+}
+
+/* fundos card */
+.fcasa {
+  background-image: url(i/card/seg_casa.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.fauto {
+  background-image: url(i/card/seg_auto.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.fempresarial {
+  background-image: url(i/card/seg_empresarial.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.ffinanceiro {
+  background-image: url(i/card/seg_financeira.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.fccaixa{
+  background-image: url(i/casa_caixa.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.fcar{
+  background-image: url(i/casa_ar.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.fcdete{
+  background-image: url(i/casa_dete.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* fundos card */
+
+#card_casa .bt {
+  background-color: var(--azul);
+}
+
+#card_auto .bt {
+  background-color: var(--verde);
+}
+
+#card_empresarial .bt {
+  background-color: var(--amarelo);
+}
+
+#card_financeiro .bt {
+  background-color: var(--vermelho);
+}
+
+.card .bt {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+.sombra_10{
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+
+
+/* --------------------------------- Botoes --------------------------------- */
+
+.bt {
+
+  color: #fff;
+
   transition: all 0.3s 0s ease;
   -webkit-transition: all 0.3s 0s ease;
   -moz-transition: all 0.3s 0s ease;
   -ms-transition: all 0.3s 0s ease;
   -o-transition: all 0.3s 0s ease;
 }
-
-.bt-verde:hover {
-  color: #6ea92f !important;
+#card_casa .bt:hover{
   background-color: #fff;
-  box-shadow: 0px 0px 20px #6ea92f;
+  color:var(--azul);
+  box-shadow: 0px 0px 20px var(--azul);
+}
+#card_auto .bt:hover{
+  background-color: #fff;
+  color:var(--verde);
+  box-shadow: 0px 0px 20px var(--verde);
+}
+#card_empresarial .bt:hover{
+  background-color: #fff;
+  color:var(--amarelo);
+  box-shadow: 0px 0px 20px var(--amarelo);
+}
+#card_financeiro .bt:hover{
+  background-color: #fff;
+  color:var(--vermelho);
+  box-shadow: 0px 0px 20px var(--vermelho);
 }
 
 
@@ -84,7 +239,13 @@ a:link {
 
 
 /* --------------------------------- secoes --------------------------------- */
+#opcoes {
+  background-color: rgba(10, 95, 169, 0.15);
+}
 
+.secoes{
+  padding: 40px 0px 40px;
+}
 
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -94,7 +255,14 @@ a:link {
 
 /*Medium devices (tablets, 768px and up)*/
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .secoes{
+    padding: 70px 0px 70px;
+  }
+}
 
 
 /*Large devices (desktops, 992px and up)*/
