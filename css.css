@@ -1,0 +1,110 @@
+/* ------------------------------- reset bruno ------------------------------ */
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", sans-serif;
+  color: #2b3346;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/* --------------------------------- config --------------------------------- */
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+/* --------------------------------- textos --------------------------------- */
+
+ul,
+ol {
+  font-size: 1.3rem;
+}
+
+ol li,
+ul li {
+  margin-bottom: 10px;
+}
+
+
+
+
+/* --------------------------------- Botoes --------------------------------- */
+
+.bt-verde {
+  background-color: #6ea92f;
+  color: #fff !important;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.3s 0s ease;
+  -webkit-transition: all 0.3s 0s ease;
+  -moz-transition: all 0.3s 0s ease;
+  -ms-transition: all 0.3s 0s ease;
+  -o-transition: all 0.3s 0s ease;
+}
+
+.bt-verde:hover {
+  color: #6ea92f !important;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px #6ea92f;
+}
+
+
+
+/* ---------------------------------- links --------------------------------- */
+
+a:link {
+  text-decoration: none;
+}
+
+
+/* --------------------------------- secoes --------------------------------- */
+
+
+
+/*Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {}
+
+
+/*Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {}
+
+
+/*Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {}
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {}
+
+
+/* --------------------------------- config --------------------------------- */
