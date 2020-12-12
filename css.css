@@ -72,12 +72,17 @@ hr {
   background-color: #fff;
 
 }
-.feature2{
-  font-size:1rem;
+
+.feature2 {
+  font-size: 1rem;
 }
 
 #scasa .feature {
   border: 2px solid var(--azul);
+}
+
+#sauto2 .feature {
+  border: 2px solid var(--verde);
 }
 
 ul,
@@ -176,11 +181,13 @@ ul li {
 
 /* FUNDOS CARDS */
 
-#card_casa .bt,.contratar_casa .bt {
+#card_casa .bt,
+.contratar_casa .bt {
   background-color: var(--azul);
 }
 
-#card_auto .bt {
+#card_auto .bt,
+.contratar_auto .bt {
   background-color: var(--verde);
 }
 
@@ -192,7 +199,9 @@ ul li {
   background-color: var(--vermelho);
 }
 
-.card .bt,.contratar_casa .bt {
+.card .bt,
+.contratar_casa .bt,
+.contratar_auto .bt {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -216,13 +225,15 @@ ul li {
   -o-transition: all 0.3s 0s ease;
 }
 
-#card_casa .bt:hover,.contratar_casa .bt:hover {
+#card_casa .bt:hover,
+.contratar_casa .bt:hover {
   background-color: #fff;
   color: var(--azul);
   box-shadow: 0px 0px 20px var(--azul);
 }
 
-#card_auto .bt:hover {
+#card_auto .bt:hover,
+.contratar_auto .bt:hover {
   background-color: #fff;
   color: var(--verde);
   box-shadow: 0px 0px 20px var(--verde);
@@ -279,7 +290,15 @@ a:link {
 
 /*Large devices (desktops, 992px and up)*/
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+  #sauto {
+    background-image: url(i/fundo_auto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+}
 
 
 /*Extra large devices (large desktops, 1200px and up)*/
