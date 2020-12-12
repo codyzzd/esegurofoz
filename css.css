@@ -1,4 +1,4 @@
-/* ------------------------------- reset bruno ------------------------------ */
+/* RESET BRUNO */
 /*top right bottom left;*/
 
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
@@ -32,11 +32,11 @@ h1 {
 :root {
   --azul: #0A5FA9;
   --verde: #0AA983;
-  --amarelo:#A9860A;
-  --vermelho:#A90A0A;
+  --amarelo: #A9860A;
+  --vermelho: #A90A0A;
 }
 
-/* --------------------------------- config --------------------------------- */
+/* CONFIG */
 
 hr {
 
@@ -63,17 +63,21 @@ hr {
 
 
 
-/* --------------------------------- elementos --------------------------------- */
-.tcentro{
+/* ELEMENTOS */
+.tcentro {
   text-align: center;
 }
-.feature{
-  background-color:#fff;
+
+.feature {
+  background-color: #fff;
 
 }
-#scasa .feature{
-  border:2px solid var(--azul);
+.feature2{
+  font-size:1rem;
+}
 
+#scasa .feature {
+  border: 2px solid var(--azul);
 }
 
 ul,
@@ -85,13 +89,15 @@ ol li,
 ul li {
   margin-bottom: 10px;
 }
-.bord_10{
-  border-radius:10px;
-  -webkit-border-radius:10px;
-  -moz-border-radius:10px;
-  -ms-border-radius:10px;
-  -o-border-radius:10px;
+
+.bord_10 {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
+
 .info {
   background-color: #fff;
   border-radius: 0px 0px 10px 10px;
@@ -118,7 +124,7 @@ ul li {
   height: 150px;
 }
 
-/* fundos card */
+/* FUNDOS CARDS */
 .fcasa {
   background-image: url(i/card/seg_casa.jpg);
   background-repeat: no-repeat;
@@ -147,28 +153,30 @@ ul li {
   background-size: cover;
 }
 
-.fccaixa{
+.fccaixa {
   background-image: url(i/casa_caixa.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.fcar{
+
+.fcar {
   background-image: url(i/casa_ar.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.fcdete{
+
+.fcdete {
   background-image: url(i/casa_dete.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-/* fundos card */
+/* FUNDOS CARDS */
 
-#card_casa .bt {
+#card_casa .bt,.contratar_casa .bt {
   background-color: var(--azul);
 }
 
@@ -184,66 +192,69 @@ ul li {
   background-color: var(--vermelho);
 }
 
-.card .bt {
+.card .bt,.contratar_casa .bt {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
 
 }
-.sombra_10{
+
+.sombra_10 {
   box-shadow: 0px 0px 10px #ccc;
 }
 
 
 
-/* --------------------------------- Botoes --------------------------------- */
+/* BOTOES */
 
 .bt {
-
   color: #fff;
-
   transition: all 0.3s 0s ease;
   -webkit-transition: all 0.3s 0s ease;
   -moz-transition: all 0.3s 0s ease;
   -ms-transition: all 0.3s 0s ease;
   -o-transition: all 0.3s 0s ease;
 }
-#card_casa .bt:hover{
+
+#card_casa .bt:hover,.contratar_casa .bt:hover {
   background-color: #fff;
-  color:var(--azul);
+  color: var(--azul);
   box-shadow: 0px 0px 20px var(--azul);
 }
-#card_auto .bt:hover{
+
+#card_auto .bt:hover {
   background-color: #fff;
-  color:var(--verde);
+  color: var(--verde);
   box-shadow: 0px 0px 20px var(--verde);
 }
-#card_empresarial .bt:hover{
+
+#card_empresarial .bt:hover {
   background-color: #fff;
-  color:var(--amarelo);
+  color: var(--amarelo);
   box-shadow: 0px 0px 20px var(--amarelo);
 }
-#card_financeiro .bt:hover{
+
+#card_financeiro .bt:hover {
   background-color: #fff;
-  color:var(--vermelho);
+  color: var(--vermelho);
   box-shadow: 0px 0px 20px var(--vermelho);
 }
 
 
 
-/* ---------------------------------- links --------------------------------- */
+/* LINKS */
 
 a:link {
   text-decoration: none;
 }
 
 
-/* --------------------------------- secoes --------------------------------- */
+/* SEÇÕES */
 #opcoes {
   background-color: rgba(10, 95, 169, 0.15);
 }
 
-.secoes{
+.secoes {
   padding: 40px 0px 40px;
 }
 
@@ -259,7 +270,8 @@ a:link {
   h1 {
     font-size: 3rem;
   }
-  .secoes{
+
+  .secoes {
     padding: 70px 0px 70px;
   }
 }
@@ -273,6 +285,3 @@ a:link {
 /*Extra large devices (large desktops, 1200px and up)*/
 
 @media (min-width: 1200px) {}
-
-
-/* --------------------------------- config --------------------------------- */
