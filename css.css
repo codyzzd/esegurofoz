@@ -283,6 +283,18 @@ a:link {
   background-color: rgba(10, 95, 169, 0.15);
 }
 
+#sauto {
+  background-color: rgba(10, 169, 131, 0.15);
+}
+
+#sempresarial {
+  background-color: rgba(169, 134, 10, 0.15);
+}
+
+#sfin {
+  background-color: rgba(169, 10, 10, 0.15);
+}
+
 .secoes {
   padding: 40px 0px 40px;
 }
