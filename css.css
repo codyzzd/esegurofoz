@@ -289,6 +289,7 @@ a:link {
 
 #sempresarial {
   background-color: rgba(169, 134, 10, 0.15);
+  text-align: left;
 }
 
 #sfin {
@@ -333,6 +334,7 @@ a:link {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    text-align: right;
   }
 
   #sfin {
