@@ -68,6 +68,10 @@ hr {
   text-align: center;
 }
 
+.tdireita {
+  text-align: right;
+}
+
 .feature {
   background-color: #fff;
 
@@ -83,6 +87,14 @@ hr {
 
 #sauto .feature {
   border: 2px solid var(--verde);
+}
+
+#sempresarial .feature {
+  border: 2px solid var(--amarelo);
+}
+
+#sfin .feature {
+  border: 2px solid var(--vermelho);
 }
 
 ul,
@@ -191,17 +203,21 @@ ul li {
   background-color: var(--verde);
 }
 
-#card_empresarial .bt {
+#card_empresarial .bt,
+.contratar_emp .bt {
   background-color: var(--amarelo);
 }
 
-#card_financeiro .bt {
+#card_financeiro .bt,
+.contratar_fin .bt {
   background-color: var(--vermelho);
 }
 
 .card .bt,
 .contratar_casa .bt,
-.contratar_auto .bt {
+.contratar_auto .bt,
+.contratar_emp .bt,
+.contratar_fin .bt {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -239,13 +255,15 @@ ul li {
   box-shadow: 0px 0px 20px var(--verde);
 }
 
-#card_empresarial .bt:hover {
+#card_empresarial .bt:hover,
+.contratar_emp .bt:hover {
   background-color: #fff;
   color: var(--amarelo);
   box-shadow: 0px 0px 20px var(--amarelo);
 }
 
-#card_financeiro .bt:hover {
+#card_financeiro .bt:hover,
+.contratar_fin .bt:hover {
   background-color: #fff;
   color: var(--vermelho);
   box-shadow: 0px 0px 20px var(--vermelho);
@@ -293,6 +311,20 @@ a:link {
 @media (min-width: 992px) {
   #sauto {
     background-image: url(i/fundo_auto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #sempresarial {
+    background-image: url(i/fundo_empresarial.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #sfin {
+    background-image: url(i/fundo_financeiro.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
